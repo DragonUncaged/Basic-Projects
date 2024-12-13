@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U3Sms</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <header class="head center-div">
+            <a href="#">
+                Student Portal
+            </a>
+        </header>
+
+        <div class="search-form center-div">
+            <input type="search" name="search" id="search" placeholder="Search">
+            <button class="btn-black" id="search-btn">Search</button>
+        </div>
+
+        <section class="btn-box center-div">
+            <button class="btn btn-black" id="atz">Sort A &#8594; Z</button>
+            <button class="btn btn-black" id="zta">Sort Z &#8594; A</button>
+            <button class="btn btn-black" id="sbm">Sort By Marks</button>
+            <button class="btn btn-black" id="sbp">Sort By Passing</button>
+            <button class="btn btn-black" id="sbc">Sort By Class</button>
+            <button class="btn btn-black" id="sbg">Sort By Gender</button>
+        </section>
+
+
+        <div class="table-container center-div">
+            <table class="myTable" id="combine" border="1">
+                <thead>
+                    <th align="center">ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Markes</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </thead>
+                <tbody id="tableContent">
+                </tbody>
+            </table>
+
+            <table class="myTable t-none" id="female" border="1">
+                <caption>Female Table</caption>
+                <thead>
+                    <th align="center">ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Markes</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+
+                </thead>
+                <tbody id="tableContent-female">
+                </tbody>
+            </table>
+
+            <table class="myTable t-none" id="male" border="1">
+                <caption>Male Table</caption>
+                <thead>
+                    <th align="center">ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Markes</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </thead>
+                <tbody id="tableContent-male">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
