@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Signup Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <form id="signupForm" novalidate>
+            <div class="form-group">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <div class="error-message">Please enter your full name</div>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email" required>
+                <div class="error-message">Please enter a valid email address</div>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <div class="error-message">Password must be at least 8 characters</div>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <div class="error-message">Passwords do not match</div>
+            </div>
+
+            <div class="form-group">
+                <input type="date" id="dob" required>
+                <div class="error-message">Please enter your date of birth</div>
+            </div>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="userType" value="student" required> Student
+                </label>
+                <label>
+                    <input type="radio" name="userType" value="employee"> Employee
+                </label>
+            </div>
+
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="terms" required>
+                    I agree to all the Terms and conditions
+                </label>
+                <div class="error-message">You must agree to the terms</div>
+            </div>
+
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const errorMessages = document.querySelectorAll('.error-message');
+            errorMessages.forEach(msg => msg.style.display = 'none');
+            
+            // Full Name validation
+            const fullName = document.getElementById('fullName');
+            if (!fullName.value.trim()) {
+                showError(fullName, 'Please enter your full name');
+                isValid = false;
+            }
+
+            // Email validation
+            const email = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                showError(email, 'Please enter a valid email address');
+                isValid = false;
+            }
+
+            // Password validation
+            const password = document.getElementById('password');
+            if (password.value.length < 8) {
+                showError(password, 'Password must be at least 8 characters');
+                isValid = false;
+            }
+
+            // Confirm Password validation
+            const confirmPassword = document.getElementById('confirmPassword');
+            if (confirmPassword.value !== password.value) {
+                showError(confirmPassword, 'Passwords do not match');
+                isValid = false;
+            }
+
+            // Date of Birth validation
+            const dob = document.getElementById('dob');
+            if (!dob.value) {
+                showError(dob, 'Please enter your date of birth');
+                isValid = false;
+            }
+
+            // Radio button validation
+            const userType = document.querySelector('input[name="userType"]:checked');
+            if (!userType) {
+                const radioGroup = document.querySelector('.radio-group');
+                radioGroup.classList.add('error');
+                isValid = false;
+            }
+
+            // Terms checkbox validation
+            const terms = document.getElementById('terms');
+            if (!terms.checked) {
+                showError(terms, 'You must agree to the terms');
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Form submitted successfully!');
+                this.reset();
+            }
+        });
+
+        function showError(element, message) {
+            element.classList.add('error');
+            const errorDiv = element.nextElementSibling;
+            if (errorDiv && errorDiv.classList.contains('error-message')) {
+                errorDiv.textContent = message;
+                errorDiv.style.display = 'block';
+            }
+        }
+
+        // Remove error styling on input
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('input', function() {
+                this.classList.remove('error');
+                const errorDiv = this.nextElementSibling;
+                if (errorDiv && errorDiv.classList.contains('error-message')) {
+                    errorDiv.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
