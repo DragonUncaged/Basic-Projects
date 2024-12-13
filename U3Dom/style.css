@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 35px 55px;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 60px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+  color: lightgray;
+}
+
+hr {
+  width: 13% !important;
+  margin-top: 10px;
+  border-color: lightgray !important;
+}
+
+.counter-display {
+  margin-bottom: 30px;
+}
+
+#currentCount {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 13px;
+}
+
+.btn {
+  border-radius: 0px;
+  border: 1px solid lightgray;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.alert-message {
+  color: brown;
+  margin: 0px 0px 30px 0px;
+  visibility: hidden; /* Updated to align with the new JavaScript logic */
+}
+
+.btn:disabled {
+  background-color: lightblue;
+  cursor: not-allowed;
+}
