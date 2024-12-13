@@ -1,0 +1,132 @@
+body {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.field label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.field input {
+  width: 230px;
+  padding: 8px 12px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+
+.add-btn {
+  width: 120px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-btn:hover {
+  background-color: gray;
+  color: white;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.employee-header {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#employeeCount {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: gray;
+}
+
+.list-section {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 600px;
+}
+
+.employee-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.employee-entry .info {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  gap: 20px;
+}
+
+.employee-entry p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.employee-entry button {
+  width: 90px;
+  height: 35px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.employee-entry button:hover {
+  background-color: darkred;
+}
+
+.no-data {
+  text-align: center;
+  font-size: 1.2rem;
+  color: lightgray;
+}
+
+.error-msg {
+  color: red;
+  font-weight: bold;
+}
+
+.success-msg {
+  color: green;
+  font-weight: bold;
+}
