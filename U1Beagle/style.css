@@ -1,0 +1,37 @@
+
+body{
+    font-family: "Gill Sans", sans-serif;
+    padding:0 20px;
+}
+
+.blog{
+border:1px solid black;
+padding:0.8rem;
+}
+
+p,li{
+    line-height:1.5rem;
+    letter-spacing:1px
+}
+.header{
+    color: #000;
+
+
+
+font-weight: 700;
+
+text-decoration-line: underline;
+}
+.img{
+width:70vw;
+margin-bottom:10px;
+}
+
+i{
+    font-weight:700;
+}
+
+
+ol{
+padding-left:30px;
+}
