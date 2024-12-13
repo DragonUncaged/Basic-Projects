@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U3 Smc</title>
+    <link rel="shortcut icon" href="img/My LOGO.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="main">
+        <div class="form">
+            <form action="submit" method="post" id="form_main" onchange="checkCorect()">
+
+                <label for="email">Email</label>
+
+                <input type="text" id="email" placeholder="Example@email.com" onchange="checkEmail()">
+                <p class="wrong" id="para1">Make sure email is more than 3 characters and has @ and a .</p>
+
+                <label for="password">Password</label>
+
+                <input type="text" id="password" placeholder="Your Password" onchange="checkPassword()">
+                <p class="wrong" id="para2">Make sure password is more than 8 characters.</p>
+            </form>
+            <button class="submit" onclick="successwindow()">Submit</button>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
