@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- <header> -->
+    <nav class="navbar" style="width: 100%;">
+        <div class="logo">Pizza Restaurant</div>
+        <ul class="nav-links" role="navigation">
+            <li><a href="#about-us">ABOUT US</a></li>
+            <li><a href="#menu-container">MENU</a></li>
+            <li><a href="#carousel-container">BLOGS</a></li>
+            <li><a href="#container-gallery">TESTIMONY</a></li>
+            <li><a href="#container-map">FIND US</a></li>
+            <li><a href="#footer-content">OUR TEAM</a></li>
+        </ul>
+        <div class="social-icons" aria-label="Social Media Links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-whatsapp"   aria-hidden="true"></i></a>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <div class="hero" style="width: 100%;" aria-label="Main Section">
+        <img class="demo-bg" src="./images/pizzaImage.png" alt="pizza">
+        <div class="hero-content" style="width: 100%;">
+            <h1>Craving for a <br> chessy pizza?</h1>
+            <div class="underline"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat dui. Vestibulum ut
+                felis et lorem porta congue vitae nec turpis. Aliquam quis leo at nunc tempor faucibus et ac massa.
+            </p>
+        </div>
+    </div>
+    <!-- </header> -->
+    <h2 class="about-title" style="max-width: 100%; text-align: center; display: inline-block; position: relative; left: 50%; transform: translateX(-50%); border-bottom: 3px solid #E74C3C;">ABOUT US</h2>    
+    <!-- about -->
+    <section id="about-us" aria-labelledby="about-heading">
+        <div class="about">
+            <div class="underline-about" style="width: 100%;"></div>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                unchanged.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="./images/about.png" style="object-fit: cover;" alt="About Image" />
+        </div>
+    </section>
+
+    <!-- Main Menu Container -->
+
+    <div class="menu-container" id="menu-container" aria-labelledby="menu-heading">
+        <h1 class="menu-title">MENU</h1>
+        <p class="menu-description">
+            Explore the wide range of pizza baked in fresh dough and vegetables. Our pizza will tempt all your
+            excitement and senses. Made with a delicate balance of everything cheesy and spicy, you will get to savour
+            the best pizza in town.
+        </p>
+
+        <!-- Menu Items -->
+        <div class="menu-grid">
+            <!-- First Row -->
+            <div class="menu-item">
+                <img src="images/pizza5.png" alt="Pizza" class="menu-image">
+                <h2 class="menu-item-title">LOREM IPSUM</h2>
+                <p class="menu-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat
+                    dui.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/pizza2.png" alt="Pizza" class="menu-image">
+                <h2 class="menu-item-title">LOREM IPSUM</h2>
+                <p class="menu-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat
+                    dui.</p>
+            </div>
+
+            <!-- Second Row -->
+            <div class="menu-item">
+                <img src="images/bread.png" alt="Bread" class="menu-image">
+                <h2 class="menu-item-title">LOREM IPSUM</h2>
+                <p class="menu-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat
+                    dui.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/bread2.png" alt="Bread" class="menu-image">
+                <h2 class="menu-item-title">LOREM IPSUM</h2>
+                <p class="menu-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat
+                    dui.</p>
+            </div>
+
+            <!-- Third Row -->
+            <div class="menu-item">
+                <img src="images/salad.png" alt="Salad" class="menu-image">
+                <p class="menu-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat
+                    dui.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/shake1.png" alt="Shake" class="menu-image">
+                <h2 class="menu-item-title">LOREM IPSUM</h2>
+                <p class="menu-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat
+                    dui.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="carousel-container" id="carousel-container" aria-labelledby="carousel-heading">
+        <h1 class="carousel-title">Carousel</h1>
+        <div class="carousel">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="images/pizza5.png" alt="Pizza 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="images/pizza2.png" alt="Pizza 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="images/salad.png" alt="Pizza 3">
+            </div>
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img src="images/shake1.png" alt="Pizza 4">
+            </div>
+            <!-- Slide 5 -->
+            <div class="slide">
+                <img src="images/bread.png" alt="Pizza 4">
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button id="prev" class="carousel-btn">&#10094;</button>
+            <button id="next" class="carousel-btn">&#10095;</button>
+
+            <!-- Dots Indicator -->
+            <div class="dots-container">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-gallery" id="container-gallery"  aria-labelledby="gallery-heading">
+        <h1 class="gallery-title">Gallery</h1>
+
+        <div class="gallery">
+            <div class="column1">
+                <img class="allcolumn" src="./images/pizza2.png" alt="Image 1">
+            </div>
+            <div class="column">
+                <img class="allcolumn" src="./images/pizza5.png" alt="Image 4">
+                <img class="allcolumn" src="./images/salad.png" alt="Image 5">
+                <img class="allcolumn" src="./images/bread.png" alt="Image 6">
+            </div>
+            <div class="column3">
+                <img class="allcolumn" src="./images/bread2.png" alt="Image 2">
+                <img class="allcolumn" src="./images/shake1.png" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+    <h1 class="map-title" style="max-width: 100%; text-align: center; display: inline-block; position: relative; left: 50%; transform: translateX(-50%); border-bottom: 3px solid #E74C3C;">Find Us</h1>
+    <div class="container-map" id="container-map"  aria-labelledby="contact-heading">
+        <div class="map-content">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap to
+                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker.</p>
+
+            <div class="contact-info" style="display: flex;padding: 5px;margin-bottom: 30px;">
+                <i class="fa fa-map-marker fa-3x"></i>
+                <div class="phone-numbers" style="padding-left: 50px;">
+                    <p>Location XYZ, XYZ Colony, Delhi</p>
+                </div>
+            </div>
+
+            <div class="contact-info" style="display: flex;padding: 5px;">
+                <i class="fa fa-phone fa-3x"></i>
+                <div class="phone-numbers" style="padding-left: 50px;">
+                    <p>987-654-321</p>
+                    <p>123-456-789</p>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=..." frameborder="0" allowfullscreen width="80%"
+                height="50%"></iframe>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+<footer>
+    <div style="display: flex; width: 100%; padding: 20px;"></div>
+    <div class="footer-section Image" style="width: 40%; height: auto;">
+    </div>
+    <img src="./images/footer-image.png" style="width: 10%; height: 10%; object-fit: cover;" alt="footer-image">
+    </div>
+    <div class="footer-section contact" style="width: 45%; margin-left: auto; padding: 20px; float: right;">
+        <p style="margin: 10px 0;"><i class="fa fa-envelope"></i> mailid@gmail.com</p>
+        <p style="margin: 10px 0;"><i class="fa fa-phone"></i> 123-456-789</p>
+    </div>
+    </div>
+    </div>
+</footer>
+
+</html>
