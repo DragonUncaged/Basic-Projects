@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light d-flex bg-light">
+    <div class="container">
+        <h5 class="mr-10 ">Complex Ui</h5>
+        <!-- Toggler button for small screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSdCt"
+            aria-controls="navbarSdCt" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="nav-content content collapse navbar-collapse" id="navbarSdCt">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-success" aria-current="page" href="#">
+                        <h6 class="mx-auto  text-secondary">Section 1</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#">
+                        <h6 class="mx-auto p-200 text-secondary"> Section 2</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#">
+                        <h6 class="mx-auto p-200 text-secondary">Section 3</h6>
+                    </a>
+                </li>
+            </ul>
+            <form class="d-flex Search seach">
+                <input class="form-control me-2 w-80" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success fw-bolder" type="submit">
+                    Search
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+  <!-- </header> -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://media.istockphoto.com/id/521714583/photo/new-york-city-midtown-with-empire-state-building-at-sunset.jpg?s=612x612&w=0&k=20&c=paLoZfZnaZSfaBK_DxLls_Ii0hD3r2PBKSlS6M1QxVU="
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-white">
+          <h5>First slide label</h5>
+          <p>First slide description.</p>
+          <button class="bg-primary text-white">Call to Action</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://media.istockphoto.com/id/1048358188/photo/modern-building-in-paris.jpg?s=612x612&w=0&k=20&c=xQKe6UpXIZhIHQJ-pwrOMm1KIQd74Xc6haT-UcVYEMc="
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Second slide description</p>
+          <button class="bg-primary text-white">Call to Action</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://media.istockphoto.com/id/1132309126/photo/rays-of-sunlight-shining-down-on-the-people-and-traffic-at-the-intersections-along-42nd.jpg?s=612x612&w=0&k=20&c=bxc2_JM1sGOaHM96Ntqn_QCZdNdhbaUFTUDbOCjlV-g="
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Third slide description.</p>
+          <button class="bg-primary text-white">Call to Action</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="d-flex mt-5 justify-content-center flex-wrap">
+    <div>
+      <div class="bg-secondary-subtle text-secondary text-center m-2 py-5"
+        style="height: 200px; width: 300px; border-radius:5px; ">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <p class="text-dark text-bolder mt-0 text-center">Short Description</p>
+    </div>
+    <div>
+      <div class="bg-secondary-subtle text-secondary text-center m-2 py-5"
+        style="height: 200px; width: 300px; border-radius:5px;">
+        <h1 class="mt-5">300X200</h1>
+      </div>
+      <p class="text-dark text-bolder mt-0 text-center">Short Description</p>
+    </div>
+    <div>
+      <div class="bg-secondary-subtle text-secondary text-center m-2 py-5"
+        style="height: 200px; width: 300px; border-radius:5px;">
+        <h1 class="mt-5">300X200</h1>
+      </div>
+      <p class="text-dark text-bolder mt-0 text-center">Short Description</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="grid justify-content-center">
+      <div id="item1" class="bg-secondary-subtle text-secondary text-center  py-5 grid-item">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div id="item2" class="bg-secondary-subtle text-secondary text-center  py-5 grid-item">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div id="item3" class="bg-secondary-subtle text-secondary text-center  py-5 grid-item">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div id="item4" class="bg-secondary-subtle text-secondary text-center  py-5 grid-item">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div id="item5" class="bg-secondary-subtle text-secondary text-center  py-5 grid-item">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div id="item6" class="bg-secondary-subtle text-secondary text-center  py-5 grid-item">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div id="item7" class="bg-secondary-subtle text-secondary text-center  py-5 grid-item">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div id="item8" class="bg-secondary-subtle text-secondary text-center  py-5 grid-item">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div id="item9" class="bg-secondary-subtle text-secondary text-center  py-5 grid-item">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+    </div>
+  </div>
+
+  <div id="container" class="d-flex mt-5 justify-content-center flex-wrap ">
+    <div class="section section-1 mx-3   ">
+      <div class="bg-secondary-subtle text-secondary text-center m-2 py-5"
+        style="height: 250px; width: 220px; border-radius:5px; ">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div class="info mx-3">
+        <h4>Card title</h4>
+        <p>Card description</p>
+        <button class="bg-primary text-white">call to action</button>
+      </div>
+    </div>
+    <div class="section section-2 mx-3">
+      <div class="bg-secondary-subtle text-secondary text-center m-2 py-5"
+        style="height: 250px; width: 220px; border-radius:5px; ">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div class="info mx-3">
+        <h4>Card title</h4>
+        <p>Card description</p>
+        <button class="bg-primary text-white">call to action</button>
+      </div>
+    </div>
+    <div class="section section-3 mx-3">
+      <div class="bg-secondary-subtle text-secondary text-center m-2 py-5"
+        style="height: 250px; width: 220px; border-radius:5px; ">
+        <h1 class="mt-4 ">300X200</h1>
+      </div>
+      <div class="info mx-3">
+        <h4>Card title</h4>
+        <p>Card description</p>
+        <button class="bg-primary text-white">call to action</button>
+      </div>
+    </div>
+  </div>
+
+  <footer id="mainFooter" class="mt-4 mb-5">
+    <div class="footer-container row ml-5">
+      <div class="footer-section col">
+        <h2>Useful Links</h2>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </div>
+      <div class="footer-section col">
+        <h2>More Links</h2>
+        <ul>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Link 6</a></li>
+        </ul>
+      </div>
+      <div class="footer-section col">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:youremail@yourdomain.com">youremail@yourdomain.com</a></p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between">
+      <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+      <a href="#" class="back-to-top ">
+        <button class="bg-primary text-white d-flex align-items-right ">Back to Top</button>
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!--  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
