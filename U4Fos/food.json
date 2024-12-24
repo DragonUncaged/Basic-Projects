@@ -15,7 +15,7 @@
       "id": 3,
       "name": "Tacos",
       "price": 3.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas.jpg/1280px-001_Tacos_de_carnitas.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/330px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg"
     },
     {
       "id": 4,
@@ -27,37 +27,37 @@
       "id": 5,
       "name": "Pasta",
       "price": 9.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Spaghetti_aglio_e_olio.jpg/1280px-Spaghetti_aglio_e_olio.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/375px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg"
     },
     {
       "id": 6,
       "name": "Fried Chicken",
       "price": 7.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Fried_chicken_pieces.jpg/1024px-Fried_chicken_pieces.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fried-Chicken-Set.jpg/330px-Fried-Chicken-Set.jpg"
     },
     {
       "id": 7,
       "name": "Grilled Cheese Sandwich",
       "price": 4.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Grilled_cheese_sandwich.jpg/1280px-Grilled_cheese_sandwich.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Classic_Grilled_Cheese_Sandwich_%2825791331763%29_%28cropped%29.jpg/330px-Classic_Grilled_Cheese_Sandwich_%2825791331763%29_%28cropped%29.jpg"
     },
     {
       "id": 8,
       "name": "Steak",
       "price": 15.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Steak.jpg/1280px-Steak.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Beef_fillet_steak_with_mushrooms.jpg/450px-Beef_fillet_steak_with_mushrooms.jpg"
     },
     {
       "id": 9,
       "name": "Caesar Salad",
       "price": 6.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Caesar_salad_at_The_Original_caesar%27s%2C_Tijuana.jpg/1024px-Caesar_salad_at_The_Original_caesar%27s%2C_Tijuana.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Caesar_salad_%282%29.jpg/330px-Caesar_salad_%282%29.jpg"
     },
     {
       "id": 10,
       "name": "Fish and Chips",
       "price": 8.49,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Fish_and_chips_in_Edinburgh.jpg/1280px-Fish_and_chips_in_Edinburgh.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Fish_and_chips_blackpool.jpg/413px-Fish_and_chips_blackpool.jpg"
     },
       {
       "id": 11,
@@ -69,31 +69,31 @@
       "id": 12,
       "name": "Burrito",
       "price": 7.49,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Burrito.JPG/1280px-Burrito.JPG"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Burrito.JPG/375px-Burrito.JPG"
     },
     {
       "id": 13,
       "name": "Pho",
       "price": 8.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Pho-Beef-Noodles-Soup.jpg/1280px-Pho-Beef-Noodles-Soup.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Ph%E1%BB%9F_b%C3%B2_%2839425047901%29.jpg/300px-Ph%E1%BB%9F_b%C3%B2_%2839425047901%29.jpg"
     },
     {
       "id": 14,
       "name": "Pad Thai",
       "price": 9.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pad_Thai_Stall_in_Bangkok.jpg/1280px-Pad_Thai_Stall_in_Bangkok.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Phat_Thai_kung_Chang_Khien_street_stall.jpg/330px-Phat_Thai_kung_Chang_Khien_street_stall.jpg"
     },
     {
       "id": 15,
       "name": "Gyro",
       "price": 6.49,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Gyros_Pita_Bread.jpg/1280px-Gyros_Pita_Bread.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Pita_giros.JPG/353px-Pita_giros.JPG"
     },
     {
       "id": 16,
       "name": "Ice Cream",
       "price": 3.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Vanilla_ice_cream.JPG/1280px-Vanilla_ice_cream.JPG"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg/330px-Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg"
     },
     {
       "id": 17,
@@ -105,13 +105,13 @@
       "id": "18",
       "name": "Apple Pie",
       "price": 4.49,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Proper_Apple_Pie.jpg/1280px-Proper_Apple_Pie.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Apple_pie.jpg/300px-Apple_pie.jpg"
     },
     {
       "id": 19,
       "name": "Chocolate Cake",
       "price": 5.49,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Chocolate_cake.jpg/1280px-Chocolate_cake.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Chocolate_fudge_cake.jpg/330px-Chocolate_fudge_cake.jpg"
     },
     {
       "id": 20,
@@ -123,19 +123,19 @@
       "id": 21,
       "name": "Cupcake",
       "price": 2.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chocolate_cupcakes_%281%29.jpg/1280px-Chocolate_cupcakes_%281%29.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Cupcakes%2C_chocolate_and_strawberry_flavour.jpg/360px-Cupcakes%2C_chocolate_and_strawberry_flavour.jpg"
     },
     {
       "id": 22,
       "name": "Crepes",
       "price": 5.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Cr%C3%AApes_Suzette.JPG/1280px-Cr%C3%AApes_Suzette.JPG"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Crepes_dsc07085.jpg/375px-Crepes_dsc07085.jpg"
     },
     {
       "id": 23,
       "name": "Club Sandwich",
       "price": 6.99,
-      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Club_Sandwich.jpg/1280px-Club_Sandwich.jpg"
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Club_sandwich_at_Caf%C3%A9_Picnic.jpg/330px-Club_sandwich_at_Caf%C3%A9_Picnic.jpg"
     },
     {
       "id": 24,
