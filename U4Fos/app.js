@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // The API URL for the menu
-    const MENU_API_URL = "https://raw.githubusercontent.com/saksham-accio/f2_contest_3/main/food.json";
-    // const MENU_API_URL = "https://raw.githubusercontent.com/DragonUncaged/Basic-Projects/refs/heads/main/U4Fos/food.json";
+    // const MENU_API_URL = "https://raw.githubusercontent.com/saksham-accio/f2_contest_3/main/food.json";
+    const MENU_API_URL = "https://raw.githubusercontent.com/DragonUncaged/Basic-Projects/refs/heads/main/U4Fos/food.json";
     const IMAGE_TIMEOUT = 1000; // Timeout for image loading (1 second)
     const FALLBACK_IMAGE = 'img/default-loading.png'; // Fallback image in case of failure
 
