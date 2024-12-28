@@ -1,15 +1,3 @@
-// the Unlash API is not working anymore, so I have used the JSON file to load the menu items 
-//same as the url : https://surjeet-food-ordering-system.netlify.app/?
-
-// Source :
-// https://www.reddit.com/r/unsplash/comments/s13x4h/what_happened_to_sourceunsplashcom/
-// 
-// We do want to let you know that source.unsplash.com was created before the Unsplash API. 
-// Unfortunately, Unsplash no longer provides any support for source.unsplash.com. 
-// We only left up this option for legacy developers who had been using source.unsplash.com before the Unsplash API was created. 
-// If you plan to use Unsplash images, it can only be through the Unsplash API since that is all we support at this time. 
-// You can find more information about the Unsplash API here:
-
 document.addEventListener("DOMContentLoaded", function () {
     // Hamburger menu logic
     let open = document.querySelector(".open");
@@ -24,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
     close.addEventListener("click", function () {
         close.style.display = "none";
         side_bar.style.display = "none";
+
     });
 
     // The API URL for the menu
-    // const MENU_API_URL = "https://raw.githubusercontent.com/saksham-accio/f2_contest_3/main/food.json";
     const MENU_API_URL = "https://raw.githubusercontent.com/DragonUncaged/Basic-Projects/refs/heads/main/U4Fos/food.json";
-    const IMAGE_TIMEOUT = 1000; // Timeout for image loading (1 second)
+    const IMAGE_TIMEOUT = 1500; // Timeout for image loading (1.5 second)
     const FALLBACK_IMAGE = 'img/default-loading.png'; // Fallback image in case of failure
 
     // Helper function to load an image with a timeout
@@ -72,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const menuItemsPromises = data.map(async (item) => {
                 try {
                     // Try to load the image with timeout
-                    // console.log(item.imgSrc);
                     const imageUrl = await loadImageWithTimeout(item.imgSrc, IMAGE_TIMEOUT);
                     return createMenuItemHTML(item, imageUrl);
                 } catch (imageError) {
@@ -96,26 +83,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Helper function to create HTML for each menu item
     function createMenuItemHTML(item, imageUrl) {
-        return `
+        const template = document.createElement('template');
+        template.innerHTML = `
             <div class="card">
                 <div class="img-container">
-                    <img src="${imageUrl}" 
-                         alt="${item.name}" 
-                         class="card-main-img"
-                         onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
+                    <img
+                        src="${imageUrl}"
+                        alt="${item.name}"
+                        class="card-main-img"
+                        onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';"
+                    />
                 </div>
                 <div class="card-content">
                     <div class="card-start-content">
                         <p class="food-name">${item.name}</p>
                         <p class="cost">$${item.price}/-</p>
                     </div>
-                    <div class="card-end-content">
+                    <!-- Inline click handler -->
+                    <div class="card-end-content" onclick="triggerOrder('${item.name}', ${item.price})">
                         <img src="img/Group 4.png" alt="add to cart">
                     </div>
                 </div>
             </div>
         `;
+        return template.innerHTML;
+
     }
+    // Global function called by the inline onclick
+    window.triggerOrder = function(name, price) {
+        const order = { name, price };
+        console.log('Order triggered:', order); 
+        takeOrder1(order)
+            .then(orderPrep1)
+            .then(payOrder1)
+            .then(thankyou1)
+            .catch(err => console.error(err));
+    };
 
     // Calling getMenu to load data when DOM is ready
     getMenu();
@@ -173,6 +176,53 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Thank you for eating with us today!");
     }
 
+    //----------------------------------------------------------------------------------
+    function takeOrder1(order) {
+        return new Promise((resolve, reject) => {
+            console.log('Order taken:', order);
+            // Simulate order processing delay
+            setTimeout(() => {
+                resolve(order);
+            }, 1000);
+        });
+    }
+    
+    function orderPrep1(order) {
+        return new Promise((resolve, reject) => {
+            console.log('Order prepared:', order);
+            // Simulate order preparation delay
+            setTimeout(() => {
+                let orderPrepObj = { order_status: true, paid: false };
+                console.log('Order Preparation Status:', orderPrepObj);
+                resolve(order);
+            }, 2000);
+        });
+    }
+    
+    function payOrder1(order) {
+        return new Promise((resolve, reject) => {
+            console.log('Order paid:', order);
+            // Simulate payment processing delay
+            setTimeout(() => {
+                let payOrderObj = { order_status: true, paid: true };
+                console.log('Payment Status:', payOrderObj);
+                resolve(order);
+            }, 1500);
+        });
+    }
+    
+    function thankyou1(order) {
+        return new Promise((resolve, reject) => {
+            console.log('Thank you for your order:', order);
+            alert("Thank you for eating with us today!");
+            // Simulate thank you message delay
+            setTimeout(() => {
+                resolve(order);
+            }, 500);
+        });
+    }
+    //----------------------------------------------------------------------------------
+
     // Main function to control the flow of all the functions
     function main() {
         takeOrder()
@@ -193,5 +243,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     main();
-
 });
